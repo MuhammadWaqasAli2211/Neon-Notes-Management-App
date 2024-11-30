@@ -1,0 +1,156 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Pure black background for a dark theme */
+    color: #f0f0f0; /* Light text color for contrast */
+    padding: 20px;
+}
+
+/* Main Container Styling */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 100px;
+    margin: 0px 100px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px; /* Subtle shadow for the container */
+    
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #ff3333; /* Dark-red neon for the heading */
+    text-shadow: 0 0 10px #ff3333, 0 0 20px #ff3333; /* Neon glow effect */
+}
+
+/* Main Section Styling */
+main {
+    width: 100%;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Spacing between form elements */
+    margin-bottom: 20px;
+}
+
+/* Input and Textarea Styling */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #1a1a1a; /* Dark-gray background for inputs */
+    border: 1px solid #333; /* Subtle border for contrast */
+    border-radius: 5px;
+    color: #fff; /* White text color for readability */
+}
+
+/* Placeholder Styling */
+input::placeholder, textarea::placeholder {
+    color: #555; /* Placeholder text color */
+}
+
+/* Button Styling */
+button {
+    padding: 10px;
+    border: none;
+    background-color: #ff3333; /* Dark-red neon for buttons */
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-shadow: 0 0 10px #ff3333, 0 0 20px #ff3333; /* Neon glow effect */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #ff3333; /* Dark-red neon background */
+    text-shadow: 0 0 25px #ff3333, 0 0 40px #ff6666; /* Enhanced neon glow */
+    transform: scale(1.1); /* Slightly enlarges the button */
+    box-shadow: 0 0 15px #ff3333, 0 0 30px #ff6666; /* Adds glowing effect around the button */
+    filter: brightness(1.2); /* Increases brightness for a vibrant look */
+    transition: all 0.3s ease-in-out; /* Smooth transition for the hover effect */
+}
+
+
+/* Notes Container Styling */
+#notesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Spacing between notes */
+}
+
+/* Individual Note Styling */
+.note {
+    background-color: #1a1a1a; /* Dark-gray background for note cards */
+    border: 1px solid #333; /* Subtle border */
+    border-radius: 5px;
+    padding: 15px;
+    width: calc(33.333% - 10px); /* Responsive card width */
+    box-shadow: 0 0 15px rgba(255, 51, 51, 0.4); /* Dark-red neon glow for notes */
+    color: #fff; /* White text for readability */
+}
+
+/* Note Title Styling */
+.note h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #ff3333; /* Dark-red neon for note titles */
+    text-shadow: 0 0 10px #ff3333, 0 0 20px #ff3333;
+}
+
+/* Note Description Styling */
+.note p {
+    margin-bottom: 10px;
+    color: #ccc; /* Light gray text for descriptions */
+}
+
+/* Note Delete Button Styling */
+.note button {
+    background-color: #ff3333; /* Dark-red neon for delete button */
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    border-radius: 3px;
+    color: #fff;
+    text-shadow: 0 0 10px #ff3333, 0 0 20px #ff3333;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Delete Button Hover Effect */
+.note button:hover {
+    background-color: #ff3333;
+    text-shadow: 0 0 20px #ff3333, 0 0 30px #ff3333;
+}
+
+/* Responsive Design for Small Screens */
+@media screen and (max-width: 425px) {
+    .main-container {
+        margin: 0px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .main-container {
+        margin: -5px;
+        padding: 0px;
+        box-shadow: none; /* Remove shadow for very small screens */
+    }
+}

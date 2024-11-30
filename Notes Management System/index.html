@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes Management App</title>
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="myCss.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Application Header -->
+        <header>
+            <h1>Notes Management App</h1>
+        </header>
+        <main>
+            <!-- Form for adding new notes -->
+            <form id="noteForm">
+                <!-- Input field for the note title -->
+                <input type="text" id="noteTitle" placeholder="Enter note title" required>
+                <!-- Textarea for the note description -->
+                <textarea id="noteDescription" placeholder="Enter note description" required></textarea>
+                <!-- Button to add the note -->
+                <button type="submit">Add Note</button>
+            </form>
+            <!-- Section to display the list of notes -->
+            <section id="notesContainer">
+                <!-- Notes will be dynamically added here using JavaScript -->
+            </section>
+        </main>
+    </div>
+    <!-- Link to external JavaScript file for functionality -->
+    <script src="myJava.js"></script>
+</body>
+</html>

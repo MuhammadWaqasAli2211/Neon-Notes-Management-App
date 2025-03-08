@@ -1,4 +1,4 @@
-// Select the form element where users will add notes
+// Select form element where users will add notes
 const noteForm = document.getElementById('noteForm');
 
 // Select the input field for the note title
